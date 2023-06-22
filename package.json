@@ -1,0 +1,28 @@
+{
+  "name": "pdfservices-node-sdk-samples",
+  "version": "3.3.0",
+  "description": "PDF Services Node.js SDK samples",
+  "author": "Adobe",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/adobe/pdfservices-node-sdk-samples.git"
+  },
+  "dependencies": {
+    "@adobe/pdfservices-node-sdk": "3.3.0",
+    "decompress": "^4.2.1",
+    "exceljs": "^4.3.0",
+    "json2csv": "^6.0.0-alpha.2"
+  },
+  "bugs": {
+    "url": "https://github.com/adobe/pdfservices-node-sdk-samples/issues"
+  },
+  "homepage": "https://github.com/adobe/pdfservices-node-sdk-samples#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node main/ProductHandler.js",
+    "createJson":"node main/index.js",
+    "createCsv":"node main/csvHandler.js"
+  }
+}
