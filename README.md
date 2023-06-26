@@ -1,18 +1,18 @@
 
 # EXTRACTING INFORMATION FROM PDF INVOICES
 
-Effortlessly extract information trapped in PDF invoices. We are using Adobe PDF Services Extract API for extraction and outputing important data in a CSV format.
+Effortlessly extract information trapped in PDF invoices. We are using Adobe PDF Services Extract API for extraction and outputting important data in a CSV format.
 
 
-## Brief Discription
+## Brief Description
 
 1. `main` folder contains all the logical operations.
-2. `ProductHandler.js` file create or initialize `Products.json` file.
-3. `index.js` file Extracts the pdf data as ziped files and store in `ExtractedZip` folder.
-4. `unzip.js`file unzips the extracted ziped files and stores in `ExtractedUnzip` folder.
+2. `ProductHandler.js` file creates or initialize the `Products.json` file.
+3. `index.js` file Extracts the pdf data as zip files and stores in the `ExtractedZip` folder.
+4. `unzip. js` file unzips the extracted zipped files and stores them in the `ExtractedUnzip` folder.
 5. `jsonHandler.js` file process the extracted data and store it in `Products.json`.
 6. `csvHandler.js` file converts Products.json to CSV.
-7. `Products.json` file contains the extracted data in JSON formate.
+7. `Products.json` file contains the extracted data in JSON format.
 8. `ExtractedProduct.csv` file contains the final output.
 ## Installation
 Run in your local machine terminal
@@ -32,10 +32,10 @@ npm install
 
 ## Usage
 
-1. To Extract data from Invoices, place all the invoices in `resources` folder.
+1. To Extract data from Invoices, place all the invoices in the `resources` folder.
 
 2. Update the pdfservices-api-credentials.json file with your Adobe PDF Services API credentials.
-3. Run the script to create or update (if already exist) `products.json` file.
+3. Run the script to create or update (if it already exists) the `products.json` file.
 ```bash
 npm start
 ```
@@ -43,10 +43,11 @@ npm start
 ```bash
 npm run createJson
 ```
-5. Run the script to conver JSON data to CSV file.
+5. Run the script to convert JSON data to a CSV file.
 ```bash
 npm run createCsv
 ```
 ## API Reference
 1. Documentation of Adobe Acrobat Services APIs
- [a link](https://developer.adobe.com/document-services/docs/overview/)
+[link](https://developer.adobe.com/document-services/docs/overview/).
+2. To generate credentials [link](https://developer.adobe.com/document-services/apis/pdf-extract/).
